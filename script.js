@@ -27,12 +27,17 @@ function showMovies (movies) {
     //limpar margin
     main.innerHTML ='';
     movies.forEach(movie =>{
+        
+
         const { poster_path, title, vote_average, overview} = movie;
         
+      
         const movieEl = document.createElement('div');
         movieEl.classList.add("movie");
 
         movieEl.innerHTML =`
+
+
         <img
         src="${IMGPATH + poster_path}"
         alt="${title}"
