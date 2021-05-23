@@ -16,7 +16,7 @@ getMovies(APIURL);
         const resp = await fetch (url);
         const respData = await resp.json();
 
-//        console.log(respData);
+console.log(respData);
         showMovies(respData.results);
 //a função exibir movies foi criada inicialmente aqui.
 
