@@ -35,7 +35,7 @@ header li a {
 }
 
 /* RESPONSIVIDADE */
-@media (min-width: 360px) {
+@media (max-width: 360px) {
     header li{
         text-align: center;
     }
