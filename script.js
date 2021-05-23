@@ -27,7 +27,7 @@ function showMovies (movies) {
     //limpar margin
     main.innerHTML ='';
     movies.forEach(movie =>{
-        const { poster_path, title, vote_average} = movie;
+        const { poster_path, title, vote_average, overview} = movie;
         
         const movieEl = document.createElement('div');
         movieEl.classList.add("movie");
@@ -43,7 +43,11 @@ function showMovies (movies) {
             (vote_average)}">${vote_average}
             </span>
         </div>
-        
+        <div class="overview>
+               ${overview}
+        </div>
+
+
         `;
 
         main.appendChild(movieEl);
