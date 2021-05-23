@@ -35,9 +35,12 @@ header li a {
 }
 
 /* RESPONSIVIDADE */
-@media (max-width: 360px) {
-    header li{
+@media (max-width: 400px) {
+
+    header li.logo{
         text-align: center;
+        padding: 0px 1rem 0px 1rem; 
+
     }
 }
 
